@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Tabuľka</title>
+</head>
+<body>
+    <header><h1 class="nadpis">Tabuľka</h1></header>
+    <div class="container">
+        <div class="tabulka" id="tabulka">
+            <button type="button" class="btn-close" id="close" onclick='closewind()'></button>
+            <div class="table-responsive-xl" id="wrapper">
+            </div>
+        </div>
+        <div class="inputy">
+            <p id="fir"><b>Zadaj počet stlpcov: </b><input type="number" class="X" id="x" min="1" max="9" placeholder="od 1 po 9" 
+            oninput="checkNumx()" required></p>
+            <br>
+            <p id="sec"><b>Zadaj počet riadkov: </b><input type="number" class="Y" id="y" min="1" max="9" placeholder="od 1 po 9" oninput="checkNumy()" required></p>
+            <br>
+            <p id="paragraf">Zadal si nerpávne číslo skús od 1 po 9</p>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <button name="generate" id="Show" class="btn btn-primary" type="button" onclick='createTable()'>Zobraziť tabuľku</button>
+            </div>
+        </div>
+        <p class="legenda">*Na vytvorenie tabuľky musia byť splnené všetky požiadavky*</p>
+        <br>
+        <p class="legenda">*X= od 1 po 9*</p>
+        <br>
+        <p class="legenda">*Y= od 1 po 9*</p>
+        <footer>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Ověřit CSS!" />
+                </a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>

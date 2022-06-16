@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    background-image: url('background.svg');
+}
+table{
+    border-spacing: 30px !important;
+}
+th, td{
+    margin: 0;
+    width: 70px !important;
+    height: 20px !important;
+    border: 1px solid #000;
+}
+header{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right,#24C6DC,#514A9D);
+    color: white;
+    box-shadow: 0 4px 2px -2px gray;
+}
+.nadpis{
+    overflow: hidden;
+}
+.container{
+    margin: 2%;
+    text-align: center;
+}
+#wrapper{
+    position: absolute;
+    z-index: 100000;
+    background: linear-gradient(to left,#24C6DC,#514A9D);;
+    border-radius: 10px;
+    box-shadow: -10px -10px 5px grey;
+    padding: 5%;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 20px;
+}
+.btn-close{
+    z-index: 100001;
+    margin-top: 10px;
+}
+.X,.Y{
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 10%;
+}
+#sec,#Show,#paragraf{
+    visibility: hidden;
+}
+#Show{
+    margin: 0;
+    margin-bottom:20px;
+}
+#fir, #sec{
+    font-size: 20px;
+    margin: 0px;
+}
+.legenda{
+    color: rgb(153, 129, 94);
+    text-align: center;
+    margin: 0;
+}
+.tabulka{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+footer{
+    position: fixed;
+    bottom:0;
+    right: 0;
+    width:100%;
+}
+@media (max-width: 1212px) {
+    .X,.Y{
+        width: 20%;
+    }
+}
+@media (max-width: 770px) {
+    .X,.Y{
+        width: 30%;
+    }
+}
+@media (max-width: 400px) {
+    .X,.Y{
+        width: 40%;
+    }
+}
